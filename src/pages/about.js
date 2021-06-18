@@ -20,6 +20,12 @@ const AboutPage = () => {
                         formats={["AUTO", "WEBP", "AVIF"]}
                         style={{ marginBottom: `1.45rem` }}
                     />
+
+                    function changeBackground(color) {
+                    document.body.style.background = color;
+                    }
+
+                    useEffect(window.addEventListener("load",function() { changeBackground('gray') }));
         </Layout>
     )
 }
