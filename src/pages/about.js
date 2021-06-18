@@ -2,6 +2,10 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from "gatsby-plugin-image"
 
+function changeBackground(color) {
+    document.body.style.background = color;
+}
+
 const AboutPage = () => {
     return (
         <Layout pageTitle="About Him">
@@ -21,9 +25,6 @@ const AboutPage = () => {
                         style={{ marginBottom: `1.45rem` }}
                     />
 
-                    function changeBackground(color) {
-                    document.body.style.background = color;
-                    }
 
                     useEffect(window.addEventListener("load",function() { changeBackground('gray') }));
         </Layout>
