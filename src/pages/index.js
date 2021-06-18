@@ -7,9 +7,7 @@ const IndexPage = () => {
     <Layout pageTitle="Marcelo Lopez">
       <p>This is Marcelo Lopez' Website</p>
       <br></br>
-      <p> Figure out how to make the color gray again smh using .window or .document ??
-        I tried using useEffect() but it wouldnt work smh
-      </p>
+
 
       <StaticImage
                         src="../images/Serious_Shot.jpg" alt="portrait"
