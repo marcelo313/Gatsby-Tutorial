@@ -1,9 +1,9 @@
-import * as React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from "gatsby-plugin-image"
 
-function changeBackground(color) {
-    document.body.style.background = color;
+function ChangeBackground(color) {
+    useEffect(document.body.style.background = color);
 }
 
 const AboutPage = () => {
@@ -26,7 +26,7 @@ const AboutPage = () => {
                     />
 
 
-                    useEffect(window.addEventListener("load",function() { changeBackground('gray') }));
+                    useEffect(window.addEventListener("load",function() { ChangeBackground('gray') }));
         </Layout>
     )
 }
