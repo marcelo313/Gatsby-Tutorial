@@ -26,7 +26,7 @@ return (
         </li>
         <li className={navLinkItem}>
             <Link to="/useful-links" className={navLinkText}>
-            useful-links
+            Useful Links
             </Link>
         </li>
         </ul>
@@ -36,5 +36,11 @@ return (
     </main>
 )
 }
+
+function changeBackground(color) {
+    document.body.style.background = color;
+}
+
+window.addEventListener("load",function() { changeBackground('gray') });
 
 export default Layout

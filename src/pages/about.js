@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import { StaticImage } from "gatsby-plugin-image"
 
 const AboutPage = () => {
     return (
@@ -10,6 +10,16 @@ const AboutPage = () => {
                     </p>
 
                     <p> He is also very cute and handsome and is arguarbly tall and romantic.</p>
+
+
+
+                    <StaticImage
+                        src="../images/Fire.jpg" alt="portrait"
+                        layout="fixed"
+                        width={500}
+                        formats={["AUTO", "WEBP", "AVIF"]}
+                        style={{ marginBottom: `1.45rem` }}
+                    />
         </Layout>
     )
 }
