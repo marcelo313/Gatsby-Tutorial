@@ -41,6 +41,6 @@ function changeBackground(color) {
     document.body.style.background = color;
 }
 
-window.addEventListener("load",function() { changeBackground('gray') });
+useEffect(window.addEventListener("load",function() { changeBackground('gray') }));
 
 export default Layout
