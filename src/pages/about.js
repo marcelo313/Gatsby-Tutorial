@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { StaticImage } from "gatsby-plugin-image"
+import Star from '../components/star'
 
 const AboutPage = () => {
     return (
@@ -10,6 +11,7 @@ const AboutPage = () => {
                     </p>
 
                     <p> He is also very cute and handsome and is arguarbly tall and romantic.</p>
+                    (<Star StarRating value = {2} />,document.getElementById('root')); 
 
 
 
